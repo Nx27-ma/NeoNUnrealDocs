@@ -29,7 +29,14 @@
   justify-self: end;
 }
 
-.Footer .Icon {
-  width: 2vw;
-  height: auto;
+::deep .Footer-Navigation-Button {
+  background-color: var(--Forground-Color);
+  color: var(--Text-Primary-Color);
+  text-decoration: none;
+  border: none;
+  padding: 0px;
+}
+
+::deep .Header-Navigation-Button:hover {
+  cursor: pointer;
 }
