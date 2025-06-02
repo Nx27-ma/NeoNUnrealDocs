@@ -16,12 +16,11 @@
   margin: 0;
   display: flex;
   gap: 2.5vw;
+  align-items: center;
 }
 
-
-
 .Header-Navigation-Left {
-  grid-area: 1 / 1 / 2 / 0;
+  grid-area: 1 / 1 / 2 / 4;
   justify-self: start;
 }
 
@@ -38,8 +37,8 @@
 ::deep .Header-Navigation-Button,
 ::deep .Header-Navigation-Button.active {
   background-color: var(--Forground-Color);
-  color: var( --Text-Primary-Color);
-  text-decoration: none !important;
+  color: var(--Text-Primary-Color);
+  text-decoration: none;
   border: none;
   padding: 0px;
 }
@@ -51,4 +50,24 @@
 ::deep .Header-Navigation-Button:hover,
 ::deep .Header-Navigation-Button.active:hover {
   cursor: pointer;
+}
+
+.Header-Navigation-SearchBar {
+  background-color: var(--Forground-Color);
+  border: solid 2px var(--Border-Color);
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 20vw;
+  color: var(--Text-Primary-Color);
+}
+
+.Header-Navigation-SearchBar:focus{
+  outline: none;
+  border-color: var(--Accent-Color);
+}
+
+.Header-Navigation-Logo{
+  width: auto;
+  height: 3vw;
 }
