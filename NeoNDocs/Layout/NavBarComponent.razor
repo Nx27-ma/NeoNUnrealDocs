@@ -1,0 +1,20 @@
+﻿<h3 @onclick="Open">@PageName</h3>
+@if (isOpen)
+{
+  @foreach (var subpage in Subpages)
+  {
+    <li><NavLink href="@("/" + subpage)">@subpage</NavLink></li>
+  }
+}
+
+@code {
+  [Parameter] public string PageName { get; set; } = "NavBar";
+  [Parameter] public List<string> Subpages { get; set; } = new List<string>() {"Dummy1", "Dummy2" };
+  private bool isOpen = false;
+
+  private void Open()
+  {
+    if (isOpen) isOpen = false;
+    else isOpen = true;
+  }
+}
