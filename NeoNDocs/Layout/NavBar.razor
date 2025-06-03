@@ -1,0 +1,19 @@
+﻿<h3>@NavBarTitleText</h3>
+
+@if (NavBarContent != null || NavBarContent.Count != 0)
+{
+  @foreach (var mainPage in NavBarContent.Keys)
+  {
+    <NavBarComponent PageName="@mainPage" Subpages="@NavBarContent[mainPage]" />
+  }
+}
+else
+{
+  <p>No content available for the navigation bar.</p>
+}
+
+
+@code {
+  [Parameter] public string NavBarTitleText { get; set; } = "NeoNDocs";
+  [Parameter] public Dictionary<string, List<string>>? NavBarContent { get; set; }
+}
