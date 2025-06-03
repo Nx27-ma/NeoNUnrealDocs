@@ -1,0 +1,37 @@
+﻿[
+  {
+    "ID": "SGIntro",
+    "HTMLConent":["Hi welkom bij de NeoN survival guide. Dit is stap voor stap uitgelegd hoe het NeoNUnreal team nu werkt. Veel is waarschijnlijk toepasbaar op team starfall maar totdat geverifieerd is zou ik het even navragen aan Berend/Alex ;)"]
+  }
+  {
+    "ID": "NeoNCodecksIntro",
+    "HTMLContent": [
+
+      "Voordat je hieraan begint zorg ervoor dat je zeker weet dat je in codecks van NeoN kan!",
+      "Als je op de mainpage van de NeoN codecks zit ga dan naar decks. Hier zie je product backlog van je team en de gedeelde TO-DO en de hero card lijsten. Mocht je dit niet zien bespreek dit dan met Alex en/of Berend",
+      "Ga naar een backlog catergorie die je aanspreekt.",
+      "Eenmaal in de catergorie zijn er waarschijnlijk al eerder aangemaakte userstories.",
+      "Kies een userstory die je aanspreekt en nog niet genomen is door iemand anders. Dit zie je doordat er nog geen cirketlje met iemands naam eronder staat. Mochten er geen userstories open zijn kan je iemand gaan helpen met zijn/haar userstory of als zelfs dat niet kan, ga je naar je scrummaster gaan om het te bespreken",
+      "Als je er een gekozen ga je een aantal stappen moeten doen zodat je team ook weet waar jij aan werkt.",
+      "Stap 1: Je doet de card in je hand dat doe je door te klikken op dit icoon:",
+      "of als je de snelle shortcut wilt onthouden kan je er ook op ctrl klikken.",
+      "Stap 2: Ga nu naar je eigen hand. Meestal zijn userstories op te delen in kleinere taken en dat is dus exact wat je nu voor jezelf gaat doen",
+      "Als je nu opnieuw op je gekozen userstory klikt dan staat er een rijtje aan icoontjes ernaast. Kies het kroontje. Als je op het kroontje heb geklikt verschijnt er een subcard menu en twee knoppen: \"Add en Search\"",
+      "Kies de add knop en vul de naam van je subtask in. Dit kan bijvoorbeeld zijn: \"Shuriken verwijnt als hij opgepakt word\" of \"Als er met de shuriken geinteract wordt komt er een terug in de inventory\" Zorg ervoor dat de subtask aan de TO-DO deck wordt toegevoegd zodat iedereen hem kan zien als ze jouw deck bekijken!"
+      "Nadat je je TO-DO's hebt gemaakt kies je er een uit en zet je die ook in je deck en op actief (de \"Start working on this card\" knop)"
+
+
+    ]
+  },
+  {
+    "ID": "Gitflow",
+    "HTMLContent": [
+
+      "Als je eenmaal toegevoegd bent aan de GitHub van NeoN zou je de repository van je team moeten zien (zo niet is het tijd om Berend een bezoekje te plegen)."
+
+    ]
+  }
+
+
+
+]
