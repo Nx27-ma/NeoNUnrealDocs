@@ -1,0 +1,46 @@
+﻿*{
+  padding: 0;
+  margin: 0;
+}
+
+.NavBarComponent {
+  margin-left: 2vw;
+  width: max-content;
+}
+
+  .NavBarComponent span {
+    position: center;
+    height: 5px;
+    width: 25px;
+    display: inline-block;
+    border-radius:9999999999999999999999999999999px;
+    background-color: var(--Primary-Color);
+  }
+
+summary {
+  color: var(--Primary-Color);
+  list-style: none;
+  align-items: center;
+}
+
+
+::deep a.nav-link {
+  width: max-content;
+  text-decoration: none;
+  color: var(--Accent-Color);
+  padding: 0;
+  margin-left: 15px;
+}
+
+  ::deep a.nav-link span {
+    margin-top: -5px;
+    display: block;
+    z-index: -1;
+    width: 0%;
+    transition: width 0.3s 0.1s;
+    height: 3px;
+    background-color: var(--Accent-Color);
+  }
+  ::deep a.nav-link:hover span{
+    width: 100%;
+  }

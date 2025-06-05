@@ -1,20 +1,13 @@
-﻿<h3 @onclick="Open">@PageName</h3>
-@if (isOpen)
+﻿<div class="NavBarComponent">
+<details class="funny">
+    <summary><span />@PageName</summary>
+@foreach (var subpage in Subpages)
 {
-  @foreach (var subpage in Subpages)
-  {
-    <li><NavLink href="@("/" + subpage)">@subpage</NavLink></li>
-  }
+  <p><NavLink href="@("/" + subpage)" class="nav-link">@subpage <span /></NavLink></p>
 }
-
+</details>
+</div>
 @code {
   [Parameter] public string PageName { get; set; } = "NavBar";
-  [Parameter] public List<string> Subpages { get; set; } = new List<string>() {"Dummy1", "Dummy2" };
-  private bool isOpen = false;
-
-  private void Open()
-  {
-    if (isOpen) isOpen = false;
-    else isOpen = true;
-  }
+  [Parameter] public List<string> Subpages { get; set; } = new List<string>() { "Dummy1", "Dummy2" };
 }
