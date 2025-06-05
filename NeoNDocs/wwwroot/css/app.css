@@ -3,17 +3,16 @@
   --Forground-Color: #292636;
   --Border-Color: #5A5770;
   --Primary-Color: #5FFCA1;
-  --Secondary-Color: #FBBC04;
-  --Accent-Color: #BB86FC;
+  --Secondary-Color: #BB86FC;
+  --Accent-Color: #FBBC04;
   --Text-Primary-Color: #F1F1F1;
   --Text-Muted-Color: #A8A8A8;
 }
 
-
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+ 
 h1:focus {
     outline: none;
 }

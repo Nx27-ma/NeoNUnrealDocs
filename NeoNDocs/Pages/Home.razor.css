@@ -1,0 +1,38 @@
+﻿.Home-Content {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-Content-VerticleLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--Border-Color);
+  z-index: 1;
+}
+
+.Home-Content-Left,
+.Home-Content-Right {
+  position: absolute;
+  list-style: none;
+}
+
+.Home-Content-Left {
+  right: 52%;
+  text-align: right;
+}
+
+.Home-Content-Right {
+  left: 52%;
+  text-align: left;
+}
+
+.Home-Content-Left li,
+.Home-Content-Right li {
+  margin-top: 50px
+}
