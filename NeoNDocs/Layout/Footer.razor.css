@@ -3,11 +3,9 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  width: 100vw;
   padding: 10px;
   text-align: center;
   position: relative;
-  margin: 0px;
   z-index: 1;
 }
 
