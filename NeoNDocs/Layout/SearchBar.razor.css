@@ -1,0 +1,14 @@
+﻿input {
+  background-color: var(--Forground-Color);
+  border: solid 2px var(--Border-Color);
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 20vw;
+  color: var(--Text-Primary-Color);
+}
+
+  input:focus {
+    outline: none;
+    border-color: var(--Secondary-Color);
+  }

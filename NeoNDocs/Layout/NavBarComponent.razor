@@ -1,12 +1,13 @@
 ﻿<div class="NavBarComponent">
-<details class="funny">
+  <details class="SuperPage">
     <summary><span />@PageName</summary>
-@foreach (var subpage in Subpages)
-{
-  <p><NavLink href="@("/" + subpage)" class="nav-link">@subpage <span /></NavLink></p>
-}
-</details>
+    @foreach (var subpage in Subpages)
+    {
+      <p><NavLink href="@("/" + subpage)" class="nav-link">@subpage <span /></NavLink></p>
+    }
+  </details>
 </div>
+
 @code {
   [Parameter] public string PageName { get; set; } = "NavBar";
   [Parameter] public List<string> Subpages { get; set; } = new List<string>() { "Dummy1", "Dummy2" };

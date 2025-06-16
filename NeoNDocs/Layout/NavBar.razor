@@ -1,18 +1,22 @@
 ﻿@page "/navbar"
-<h3>@NavBarTitleText</h3>
+<div class="NavBar">
+  
+  <SearchBar />
 
-@if (NavBarContent != null || NavBarContent.Count != 0)
-{
-  @foreach (var mainPage in NavBarContent.Keys)
+  <h4>@NavBarTitleText</h4>
+
+  @if (NavBarContent != null || NavBarContent.Count != 0)
   {
-    <NavBarComponent PageName="@mainPage" Subpages="@NavBarContent[mainPage]" />
+    @foreach (var mainPage in NavBarContent.Keys)
+    {
+      <NavBarComponent PageName="@mainPage" Subpages="@NavBarContent[mainPage]" />
+    }
   }
-}
-else
-{
-  <p>No content available for the navigation bar.</p>
-}
-
+  else
+  {
+    <p>No content available for the navigation bar.</p>
+  }
+</div>
 
 @code {
   [Parameter] public string NavBarTitleText { get; set; } = "NeoNDocs";
@@ -20,7 +24,7 @@ else
   public Dictionary<string, List<string>>? NavBarContent { get; set; }
       = new Dictionary<string, List<string>>()
       {
-        { "Home", new List<string>() { "Introduction", "Getting Started" } },
+        { "Home", new List<string>() { "Documentation", "Conventions" } },
         { "Components", new List<string>() { "Button", "Input", "Card" } },
         { "Utilities", new List<string>() { "Helpers", "Extensions" } }
       };

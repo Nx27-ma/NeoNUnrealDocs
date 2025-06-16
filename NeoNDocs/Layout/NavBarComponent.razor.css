@@ -1,10 +1,4 @@
-﻿*{
-  padding: 0;
-  margin: 0;
-}
-
-.NavBarComponent {
-  margin-left: 2vw;
+﻿.NavBarComponent {
   width: max-content;
 }
 
@@ -14,7 +8,6 @@
     width: 25px;
     display: inline-block;
     border-radius:9999999999999999999999999999999px;
-    background-color: var(--Primary-Color);
   }
 
 summary {
@@ -23,16 +16,22 @@ summary {
   align-items: center;
 }
 
+details[open] summary {
+  color: var(--Accent-Color);
+}
 
 ::deep a.nav-link {
+  color: var(--Primary-Color);
   width: max-content;
   text-decoration: none;
-  color: var(--Accent-Color);
   padding: 0;
   margin-left: 15px;
 }
+  ::deep a.nav-link.active {
+    color: var(--Accent-Color);
+  }
 
-  ::deep a.nav-link span {
+    ::deep a.nav-link span {
     margin-top: -5px;
     display: block;
     z-index: -1;
