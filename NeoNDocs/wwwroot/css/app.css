@@ -21,6 +21,22 @@ body{
   background-color: var(--Background-Color);
 }
 
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
 #blazor-error-ui {
   background: lightyellow;
   bottom: 0;
