@@ -11,6 +11,10 @@
   align-items: flex-start;
 }
 
+h4{
+  margin-bottom: 15px;
+}
+
 ::deep input.SearchBar {
   width: 83%;
   margin-bottom: 20px;
